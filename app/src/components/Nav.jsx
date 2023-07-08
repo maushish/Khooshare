@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import logo from "/home/maushish/Desktop/Khooshare/client/src/images/logo.svg";
+import logo from '../images/logo.svg';
 
 const Nav = () => {
   //making use of hooks to save user's wallet address//
@@ -51,20 +51,18 @@ const Nav = () => {
   }
 
 
-
-
-  const addWalletListener=async()=>{
-    if (typeof window.ethereum!="undefined" && typeof window.ethereum!="undefined"){
-      window.ethereum.on("accountsChanged", (accounts)=>setWallletAddress(accounts[0]));
-      console.log(accounts[0])
-      
+  const addWalletListener = async () => {
+    if (typeof window.ethereum !== "undefined" && typeof window.ethereum !== "undefined") {
+      window.ethereum.on("accountsChanged", (accounts) => {
+        setWallletAddress(accounts[0]);
+        console.log(accounts[0]);
+      });
     }
     else{
       setWallletAddress("");
       console.log("Please install Metamask")
     }
-  }
-
+  };
 
 
 
