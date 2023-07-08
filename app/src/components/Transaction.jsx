@@ -1,6 +1,6 @@
 import { abi, CONTRACT_ADDRESS } from "./constant";
 import React, { useEffect, useState } from 'react';
-const ethers = require("ethers");
+import { ethers } from "ethers";
 
 
 
