@@ -13,9 +13,7 @@ const Herosection = () => {
         <a href="Transaction"className="font-semibold text-white text-2xl px-10 py-7 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br rounded-full mr-4">
           Transfer
         </a>
-        <a className="font-semibold text-white text-2xl px-10 py-7 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br rounded-full ml-4">
-          Swap
-        </a>
+        
       </div>
       <div className="text-white absolute bottom-0 mb-10">Made by Maushish😁</div>
     </div>

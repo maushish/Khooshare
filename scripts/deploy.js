@@ -1,18 +1,25 @@
-require("ethers");
+const hre = require("hardhat");
 
-async function main() {
-  const [deployer] = await ethers.getSigners();
-
-  console.log("Deploying contracts with the account:", deployer.address);
-
-  const contract = await ethers.deployContract("TokenTransfer");
-
-  console.log("Contract address:", await contract.getAddress());
+async function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-main()
-  .then(() => process.exit(0))
-  .catch((error) => {
-    console.error(error);
-    process.exit(1);
-  });
+async function main() {
+  // Deploy the Token Contract
+  const TokenTransfer = await hre.ethers.deployContract("TokenTransfer");
+  await TokenTransfer.waitForDeployment();
+  console.log("Token deployed to:", TokenTransfer.target);
+
+
+
+  // Wait for 30 seconds to let Etherscan catch up on contract deployments
+  await sleep(30 * 1000);
+
+
+}
+
+
+main().catch((error) => {
+  console.error(error);
+  process.exitCode = 1;
+});

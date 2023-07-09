@@ -1,9 +1,11 @@
 {
   "devDependencies": {
+    "@gelatonetwork/relay-context": "^3.0.0",
     "@nomicfoundation/hardhat-toolbox": "^3.0.0",
     "hardhat": "^2.16.1"
   },
   "dependencies": {
+    "@openzeppelin/contracts": "^4.9.2",
     "dotenv": "^16.3.1",
     "ethers": "^6.6.2"
   }

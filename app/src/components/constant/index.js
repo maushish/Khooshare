@@ -1,16 +1,40 @@
-export const CONTRACT_ADDRESS = "0x6C6a3c8aeb149dBE2A6904B637b840DcdFFa8348";
+export const CONTRACT_ADDRESS = "0x683c0f1AA6cd727EAaEb2F2A38fBA9f1a1470DB4";
 export const abi = [
-    {
-      "inputs": [
-        {
-          "internalType": "address payable",
-          "name": "_recipient",
-          "type": "address"
-        }
-      ],
-      "name": "transfer",
-      "outputs": [],
-      "stateMutability": "payable",
-      "type": "function"
-    }
-  ];
+  {
+    "inputs": [],
+    "name": "destinationWallet",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "sendEtherToDestination",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_destinationWallet",
+        "type": "address"
+      }
+    ],
+    "name": "setDestinationWallet",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "stateMutability": "payable",
+    "type": "receive"
+  }
+];
