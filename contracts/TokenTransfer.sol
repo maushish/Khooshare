@@ -2,12 +2,22 @@
 pragma solidity ^0.8.19;
 
 contract TokenTransfer {
-    function transfer(address payable _recipient) public payable {
-        require(msg.value > 0, "Amount must be greater than zero");
-        require(_recipient != address(0), "Recipient address cannot be zero");
+    address public destinationWallet;
 
-        (bool success, ) = _recipient.call{value: msg.value}("");
+    receive() external payable {}
+
+
+    function setDestinationWallet(address _destinationWallet) public payable {
+        destinationWallet = _destinationWallet;
+    }
+
+    function sendEtherToDestination() public payable {
+        require(destinationWallet != address(0), "Destination wallet address not set");
+        require(msg.value > 0, "Amount must be greater than zero");
+
+        uint256 amount = msg.value;
+
+        (bool success, ) = payable(destinationWallet).call{value: amount}("");
         require(success, "Transfer failed");
-    
     }
 }
