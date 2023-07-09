@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
-import { ethers } from 'ethers';
-import { abi, CONTRACT_ADDRESS } from './constant/index';
+import { abi, CONTRACT_ADDRESS } from "./constant";
+import React, { useEffect, useState } from 'react';
+const ethers = require("ethers");
+
+
 
 const Transaction = () => {
   const [account, setAccount] = useState('');

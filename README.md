@@ -1,13 +1,16 @@
-# Sample Hardhat Project
+***Frontend***-npm install,
+         npm install vite
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+***Web3***
+npm install web3modal
 
-Try running some of the following tasks:
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+npm i ethers
+
+
+npm install --save-dev @nomicfoundation/hardhat-toolbox
+
+
+npm install @fortawesome/fontawesome-svg-core \
+            @fortawesome/free-solid-svg-icons \
+            @fortawesome/react-fontawesome
