@@ -6,6 +6,7 @@ contract TokenTransfer {
 
     receive() external payable {}
 
+
     function setDestinationWallet(address _destinationWallet) public payable {
         destinationWallet = _destinationWallet;
     }
@@ -14,6 +15,9 @@ contract TokenTransfer {
         require(destinationWallet != address(0), "Destination wallet address not set");
         require(msg.value > 0, "Amount must be greater than zero");
 
-        payable(destinationWallet).transfer(msg.value);
+        uint256 amount = msg.value;
+
+        (bool success, ) = payable(destinationWallet).call{value: amount}("");
+        require(success, "Transfer failed");
     }
 }
