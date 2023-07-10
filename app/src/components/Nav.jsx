@@ -65,9 +65,9 @@ const Nav = () => {
           <img src={logo} alt="Logo" className="h-12 sm:h-20 px-2" />
         </a>
       </div>
-      <div className="flex items-center">
-        <ul className="hidden sm:flex list-none space-x-7">
-          <li>
+      <div className="flex items-center space-x-7 ">
+        <ul className="hidden sm:flex list-none  ">
+          <li className="mr-8 my-3">
             <a href="/Support" className="font-semibold text-lg hover:text-blue-600">
               Support
             </a>
@@ -85,7 +85,7 @@ const Nav = () => {
         </ul>
       </div>
     </div>
-  );
+  );  
 };
 
 export default Nav;
