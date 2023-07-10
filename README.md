@@ -1,16 +1,24 @@
-***Frontend***-npm install,
-         npm install vite
 
-***Web3***
-npm install web3modal
+# Khooshare
 
-
-npm i ethers
+Its a platform which allows transfer of Goerli Ethereum from one wallet to other.
 
 
-npm install --save-dev @nomicfoundation/hardhat-toolbox
+## Demo
+
+Insert gif or link to demo
 
 
-npm install @fortawesome/fontawesome-svg-core \
-            @fortawesome/free-solid-svg-icons \
-            @fortawesome/react-fontawesome
+## Working of Khooshare
+If you are interested to know what is happening behind the scenes here is a [flowchart](https://www.figma.com/file/kNHV9Yion1s6zOU67snAn5/Untitled?type=whiteboard&node-id=0%3A1&t=yXFp36YqabpQ7KZP-1)😁
+
+
+
+
+## Features
+
+- Supports Transaction on Goerli Testnet
+- Gasless Transaction (coming soon)
+- Swap(Coming soon)
+
+
