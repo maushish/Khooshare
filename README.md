@@ -27,7 +27,22 @@ https://github.com/maushish/Khooshare/assets/114429859/147907ea-c33d-46ea-b665-6
 
 - Supports Transaction on Goerli Testnet👀
 - Have a contact form to make queries🤔
-- Gasless Transaction (coming soon in ver2)🫣
-- Swap(Coming soon in ver2)🤩
+
+## Roadmap for version 2
+
+- Additional Wallet support👀
+
+- Gelato integration(Transactions will be gasless)🤩
+
+- Swapping tokens(ERC20) Dex🫣
+
+
+
+
+## Tech Stack
+- Frontend: React.js, JavaScript, Tailwind CSS
+
+- Backend: Solidity, Node.js, Hardhat,
+
 
 
