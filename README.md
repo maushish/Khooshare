@@ -13,13 +13,7 @@ https://github.com/maushish/Khooshare/assets/114429859/55902935-b89b-48fe-b326-0
 
 
 ## Working of Khooshare
-If you are interested to know what is happening behind the scenes here is a [flowchart](https://www.figma.com/file/kNHV9Yion1s6zOU67snAn5/Untitled?type=whiteboard&node-id=0%3A1&t=yXFp36YqabpQ7KZP-1)😁
-or you can just watch this video😎
-
-
-https://github.com/maushish/Khooshare/assets/114429859/147907ea-c33d-46ea-b665-6ee11c7849d6
-
-
+If you are interested to know what is happening behind the scenes here is a [flowchart](https://lucid.app/lucidchart/11f17089-e89b-439f-8fb6-9c25e898e64d/edit?viewport_loc=159%2C196%2C2560%2C1160%2C0_0&invitationId=inv_49352751-4803-459c-b2d7-aebb764d6cee)😁
 
 
 
